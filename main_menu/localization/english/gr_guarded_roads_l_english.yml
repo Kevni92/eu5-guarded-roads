@@ -1,0 +1,28 @@
+﻿l_english:
+ gr_guarded_gravel_roads: "Guarded Gravel Roads"
+ gr_guarded_gravel_roads_desc: "Road wardens, checkpoints and armed patrols secure the gravel roads that connect this location to the realm. The protected route strengthens local proximity, but requires soldiers, manpower and a continuous supply of equipment."
+ gr_guarded_paved_roads: "Guarded Paved Roads"
+ gr_guarded_paved_roads_desc: "A permanent road guard protects the paved routes serving this location. Better posts, patrols and communications strengthen local proximity at a growing military and material cost."
+ gr_guarded_modern_roads: "Guarded Modern Roads"
+ gr_guarded_modern_roads_desc: "Professional detachments secure the modern road network with permanent stations, organized patrols and maintained equipment, greatly strengthening local proximity."
+ gr_guarded_rail_network: "Guarded Rail Network"
+ gr_guarded_rail_network_desc: "A dedicated security organization protects rail lines, stations and critical junctions. Its extensive patrol system provides the strongest proximity benefit in the chain, but demands substantial manpower and supplies."
+
+ gr_guarded_gravel_roads_maintenance: "Guarded Gravel Roads Upkeep"
+ gr_guarded_paved_roads_maintenance: "Guarded Paved Roads Upkeep"
+ gr_guarded_modern_roads_maintenance: "Guarded Modern Roads Upkeep"
+ gr_guarded_rail_network_maintenance: "Guarded Rail Network Upkeep"
+
+ gr_guarded_gravel_roads_price: "Guarded Gravel Roads"
+ gr_guarded_paved_roads_price: "Guarded Paved Roads"
+ gr_guarded_modern_roads_price: "Guarded Modern Roads"
+ gr_guarded_rail_network_price: "Guarded Rail Network"
+
+ MODIFIER_TYPE_NAME_gr_guarded_gravel_roads_price_cost_modifier: "Guarded Gravel Roads Cost"
+ MODIFIER_TYPE_DESC_gr_guarded_gravel_roads_price_cost_modifier: "Modifies the construction cost of Guarded Gravel Roads."
+ MODIFIER_TYPE_NAME_gr_guarded_paved_roads_price_cost_modifier: "Guarded Paved Roads Cost"
+ MODIFIER_TYPE_DESC_gr_guarded_paved_roads_price_cost_modifier: "Modifies the construction cost of Guarded Paved Roads."
+ MODIFIER_TYPE_NAME_gr_guarded_modern_roads_price_cost_modifier: "Guarded Modern Roads Cost"
+ MODIFIER_TYPE_DESC_gr_guarded_modern_roads_price_cost_modifier: "Modifies the construction cost of Guarded Modern Roads."
+ MODIFIER_TYPE_NAME_gr_guarded_rail_network_price_cost_modifier: "Guarded Rail Network Cost"
+ MODIFIER_TYPE_DESC_gr_guarded_rail_network_price_cost_modifier: "Modifies the construction cost of the Guarded Rail Network."
