@@ -6,14 +6,14 @@
 
 | Tier | Building | Required road | Unlock advance | Proximity propagation | Gold | Manpower |
 |---|---|---|---|---:|---:|---:|
-| I | Guarded Gravel Roads | Gravel Road | Road Building | +5% | 150 | 0.10 |
-| II | Guarded Paved Roads | Paved Road | Paved Roads | +10% | 300 | 0.20 |
-| III | Guarded Modern Roads | Modern Road | Modern Roads | +15% | 600 | 0.30 |
-| IV | Guarded Rail Network | Railroad | Railroads | +20% | 1200 | 0.50 |
+| I | Guarded Gravel Roads | Gravel Road | Road Building | +5% | 150 | 50 |
+| II | Guarded Paved Roads | Paved Road | Paved Roads | +10% | 300 | 100 |
+| III | Guarded Modern Roads | Modern Road | Modern Roads | +15% | 600 | 150 |
+| IV | Guarded Rail Network | Railroad | Railroads | +20% | 1200 | 200 |
 
 Each tier makes the previous guarded-road building obsolete. A building is only available in a Location that has a road connection of the corresponding exact road type to a neighboring Location.
 
-The proximity bonuses use EU5's verified `local_distance_from_capital_speed_propagation` Location modifier, the same modifier used by the vanilla Bridge infrastructure building. It is a percentage modifier, so the four tiers use 0.05 / 0.10 / 0.15 / 0.20 for +5% / +10% / +15% / +20%.
+The proximity bonuses use EU5's verified `local_distance_from_capital_speed_propagation` Location modifier, the same modifier used by the vanilla `bridge_infrastructure` building. Vanilla bridges use `0.1`, i.e. +10%. Guarded Roads therefore scale this modifier as 0.05 / 0.10 / 0.15 / 0.20 for +5% / +10% / +15% / +20%.
 
 ## Upkeep and manpower
 
@@ -23,7 +23,7 @@ The buildings employ Soldier POPs and require full maintenance demand even when 
 - Tools
 - Coal
 
-Higher tiers consume progressively more of all three goods. In addition to the construction manpower price, each tier applies a persistent negative `local_manpower` raw modifier (-0.005 / -0.010 / -0.015 / -0.020), representing manpower tied down in checkpoints, escorts and patrol detachments.
+Higher tiers consume progressively more of all three goods. Construction manpower costs scale in 50-point steps: 50 / 100 / 150 / 200. In addition, each tier applies a persistent negative `local_manpower` raw modifier (-0.005 / -0.010 / -0.015 / -0.020), representing manpower tied down in checkpoints, escorts and patrol detachments.
 
 ## Languages
 
