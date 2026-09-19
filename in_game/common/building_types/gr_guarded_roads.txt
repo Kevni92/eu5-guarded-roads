@@ -45,7 +45,7 @@ gr_guarded_gravel_roads = {
 	}
 
 	raw_modifier = {
-		local_manpower = -0.005
+		local_manpower = -0.05
 	}
 
 	possible_production_methods = {
@@ -101,7 +101,7 @@ gr_guarded_paved_roads = {
 	}
 
 	raw_modifier = {
-		local_manpower = -0.010
+		local_manpower = -0.10
 	}
 
 	possible_production_methods = {
@@ -157,7 +157,7 @@ gr_guarded_modern_roads = {
 	}
 
 	raw_modifier = {
-		local_manpower = -0.015
+		local_manpower = -0.15
 	}
 
 	possible_production_methods = {
@@ -213,7 +213,7 @@ gr_guarded_rail_network = {
 	}
 
 	raw_modifier = {
-		local_manpower = -0.020
+		local_manpower = -0.20
 	}
 
 	possible_production_methods = {
