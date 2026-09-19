@@ -1,0 +1,30 @@
+# Guarded Roads maintenance.
+# Deliberately limited to weaponry, tools and coal as requested.
+
+gr_guarded_gravel_roads_maintenance = {
+	weaponry = 0.25
+	tools = 0.15
+	coal = 0.05
+	category = building_maintenance
+}
+
+gr_guarded_paved_roads_maintenance = {
+	weaponry = 0.40
+	tools = 0.25
+	coal = 0.10
+	category = building_maintenance
+}
+
+gr_guarded_modern_roads_maintenance = {
+	weaponry = 0.60
+	tools = 0.40
+	coal = 0.20
+	category = building_maintenance
+}
+
+gr_guarded_rail_network_maintenance = {
+	weaponry = 0.80
+	tools = 0.60
+	coal = 0.35
+	category = building_maintenance
+}
