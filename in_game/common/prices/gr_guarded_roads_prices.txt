@@ -1,0 +1,22 @@
+# Guarded Roads construction prices.
+# manpower is a real construction resource cost; the buildings also reduce local manpower while active.
+
+gr_guarded_gravel_roads_price = {
+	gold = 150
+	manpower = 0.10
+}
+
+gr_guarded_paved_roads_price = {
+	gold = 300
+	manpower = 0.20
+}
+
+gr_guarded_modern_roads_price = {
+	gold = 600
+	manpower = 0.30
+}
+
+gr_guarded_rail_network_price = {
+	gold = 1200
+	manpower = 0.50
+}
