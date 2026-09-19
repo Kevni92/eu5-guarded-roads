@@ -1,0 +1,224 @@
+# Guarded Roads
+# Military road-security buildings tied directly to the four vanilla road tiers.
+
+# Tier I — Gravel Road / Age of Traditions
+gr_guarded_gravel_roads = {
+	is_foreign = no
+	pop_type = soldiers
+	max_levels = 1
+	category = military_category
+	forbidden_for_estates = yes
+	employment_size = manpower_employment
+	price = gr_guarded_gravel_roads_price
+	build_time = soldier_building
+	always_add_demands = yes
+
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	country_potential = {
+		has_advance = road_building
+	}
+
+	location_potential = {
+		any_neighbor_location = {
+			has_road_of_type_to = {
+				target = root
+				type = road_type:gravel_road
+			}
+		}
+	}
+
+	allow = {
+		any_neighbor_location = {
+			has_road_of_type_to = {
+				target = root
+				type = road_type:gravel_road
+			}
+		}
+	}
+
+	modifier = {
+		local_proximity_source = 5
+	}
+
+	raw_modifier = {
+		local_manpower = -0.005
+	}
+
+	possible_production_methods = {
+		gr_guarded_gravel_roads_maintenance
+	}
+
+	construction_demand = early_soldier_building_construction
+}
+
+# Tier II — Paved Road / Age of Discovery
+gr_guarded_paved_roads = {
+	is_foreign = no
+	pop_type = soldiers
+	max_levels = 1
+	category = military_category
+	forbidden_for_estates = yes
+	employment_size = manpower_employment
+	price = gr_guarded_paved_roads_price
+	build_time = soldier_building
+	always_add_demands = yes
+
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	obsolete = gr_guarded_gravel_roads
+
+	country_potential = {
+		has_advance = paved_road_advance
+	}
+
+	location_potential = {
+		any_neighbor_location = {
+			has_road_of_type_to = {
+				target = root
+				type = road_type:paved_road
+			}
+		}
+	}
+
+	allow = {
+		any_neighbor_location = {
+			has_road_of_type_to = {
+				target = root
+				type = road_type:paved_road
+			}
+		}
+	}
+
+	modifier = {
+		local_proximity_source = 10
+	}
+
+	raw_modifier = {
+		local_manpower = -0.010
+	}
+
+	possible_production_methods = {
+		gr_guarded_paved_roads_maintenance
+	}
+
+	construction_demand = soldier_building_construction
+}
+
+# Tier III — Modern Road / Age of Absolutism
+gr_guarded_modern_roads = {
+	is_foreign = no
+	pop_type = soldiers
+	max_levels = 1
+	category = military_category
+	forbidden_for_estates = yes
+	employment_size = manpower_employment
+	price = gr_guarded_modern_roads_price
+	build_time = soldier_building
+	always_add_demands = yes
+
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	obsolete = gr_guarded_paved_roads
+
+	country_potential = {
+		has_advance = modern_road_advance
+	}
+
+	location_potential = {
+		any_neighbor_location = {
+			has_road_of_type_to = {
+				target = root
+				type = road_type:modern_road
+			}
+		}
+	}
+
+	allow = {
+		any_neighbor_location = {
+			has_road_of_type_to = {
+				target = root
+				type = road_type:modern_road
+			}
+		}
+	}
+
+	modifier = {
+		local_proximity_source = 15
+	}
+
+	raw_modifier = {
+		local_manpower = -0.015
+	}
+
+	possible_production_methods = {
+		gr_guarded_modern_roads_maintenance
+	}
+
+	construction_demand = soldier_building_construction
+}
+
+# Tier IV — Railroad / Age of Revolutions
+gr_guarded_rail_network = {
+	is_foreign = no
+	pop_type = soldiers
+	max_levels = 1
+	category = military_category
+	forbidden_for_estates = yes
+	employment_size = manpower_employment
+	price = gr_guarded_rail_network_price
+	build_time = soldier_building
+	always_add_demands = yes
+
+	rural_settlement = yes
+	town = yes
+	city = yes
+	megalopolis = yes
+
+	obsolete = gr_guarded_modern_roads
+
+	country_potential = {
+		has_advance = railroad_advance
+	}
+
+	location_potential = {
+		any_neighbor_location = {
+			has_road_of_type_to = {
+				target = root
+				type = road_type:railroad
+			}
+		}
+	}
+
+	allow = {
+		any_neighbor_location = {
+			has_road_of_type_to = {
+				target = root
+				type = road_type:railroad
+			}
+		}
+	}
+
+	modifier = {
+		local_proximity_source = 20
+	}
+
+	raw_modifier = {
+		local_manpower = -0.020
+	}
+
+	possible_production_methods = {
+		gr_guarded_rail_network_maintenance
+	}
+
+	construction_demand = soldier_building_construction
+}
