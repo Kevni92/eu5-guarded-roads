@@ -4,12 +4,14 @@
 
 ## Building chain
 
-| Tier | Building | Required road | Unlock advance | Proximity propagation | Gold | Manpower |
-|---|---|---|---|---:|---:|---:|
-| I | Guarded Gravel Roads | Gravel Road | Road Building | +5% | 150 | 50 |
-| II | Guarded Paved Roads | Paved Road | Paved Roads | +10% | 300 | 100 |
-| III | Guarded Modern Roads | Modern Road | Modern Roads | +15% | 600 | 150 |
-| IV | Guarded Rail Network | Railroad | Railroads | +20% | 1200 | 200 |
+| Tier | Building | Required road | Unlock advance | Proximity propagation | Gold |
+|---|---|---|---|---:|---:|
+| I | Escort House | Gravel Road | Road Building | +5% | 150 |
+| II | Guardhouse | Paved Road | Paved Roads | +10% | 300 |
+| III | Patrol Barracks | Modern Road | Modern Roads | +15% | 600 |
+| IV | Railway Guardhouse | Railroad | Railroads | +20% | 1200 |
+
+German localisation uses **Geleithaus → Wachhaus → Patrouillenkaserne → Bahnwache**.
 
 Each tier makes the previous guarded-road building obsolete. A building is only available in a Location that has a road connection of the corresponding exact road type to a neighboring Location.
 
@@ -23,7 +25,7 @@ The buildings employ Soldier POPs and require full maintenance demand even when 
 - Tools
 - Coal
 
-Higher tiers consume progressively more of all three goods. Construction manpower costs scale in 50-point steps: 50 / 100 / 150 / 200. In addition, each tier applies a persistent negative `local_manpower` raw modifier of -0.05 / -0.10 / -0.15 / -0.20, representing another 50 / 100 / 150 / 200 manpower tied down in checkpoints, escorts and patrol detachments.
+Higher tiers consume progressively more of all three goods. Construction has no direct manpower price. Instead, each tier applies a persistent negative `local_manpower` raw modifier of -0.05 / -0.10 / -0.15 / -0.20, representing 50 / 100 / 150 / 200 manpower tied down in escorts, checkpoints and patrol detachments.
 
 ## Languages
 
