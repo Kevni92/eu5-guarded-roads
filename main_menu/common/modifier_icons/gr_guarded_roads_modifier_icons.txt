@@ -1,0 +1,15 @@
+gr_guarded_gravel_roads_price_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/_default.dds"
+}
+
+gr_guarded_paved_roads_price_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/_default.dds"
+}
+
+gr_guarded_modern_roads_price_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/_default.dds"
+}
+
+gr_guarded_rail_network_price_cost_modifier = {
+	positive = "gfx/interface/icons/modifier_types/_default.dds"
+}
