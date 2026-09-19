@@ -1,12 +1,12 @@
 ﻿l_german:
  gr_guarded_gravel_roads: "Gesicherte Schotterstraßen"
- gr_guarded_gravel_roads_desc: "Straßenwachen, Kontrollposten und bewaffnete Patrouillen sichern die Schotterstraßen, die diesen Ort mit dem Reich verbinden. Die geschützte Route stärkt die lokale Nähe, benötigt aber Soldaten, Mannstärke und eine dauerhafte Versorgung mit Ausrüstung."
+ gr_guarded_gravel_roads_desc: "Straßenwachen, Kontrollposten und bewaffnete Patrouillen sichern die Schotterstraßen, die diesen Ort mit dem Reich verbinden. Die geschützte Route verbessert die Ausbreitung der Nähe von der Hauptstadt um 5 %, benötigt aber Soldaten, Mannstärke und eine dauerhafte Versorgung mit Ausrüstung."
  gr_guarded_paved_roads: "Gesicherte Pflasterstraßen"
- gr_guarded_paved_roads_desc: "Eine ständige Straßenwache schützt die gepflasterten Routen dieses Ortes. Bessere Wachposten, Patrouillen und Kommunikationswege stärken die lokale Nähe zu steigenden militärischen und materiellen Kosten."
+ gr_guarded_paved_roads_desc: "Eine ständige Straßenwache schützt die gepflasterten Routen dieses Ortes. Bessere Wachposten, Patrouillen und Kommunikationswege verbessern die Ausbreitung der Nähe von der Hauptstadt um 10 % bei steigenden militärischen und materiellen Kosten."
  gr_guarded_modern_roads: "Gesicherte moderne Straßen"
- gr_guarded_modern_roads_desc: "Professionelle Abteilungen sichern das moderne Straßennetz mit ständigen Stationen, organisierten Patrouillen und gewarteter Ausrüstung und stärken dadurch die lokale Nähe erheblich."
+ gr_guarded_modern_roads_desc: "Professionelle Abteilungen sichern das moderne Straßennetz mit ständigen Stationen, organisierten Patrouillen und gewarteter Ausrüstung und verbessern die Ausbreitung der Nähe von der Hauptstadt um 15 %."
  gr_guarded_rail_network: "Gesichertes Schienennetz"
- gr_guarded_rail_network_desc: "Eine eigene Sicherungsorganisation schützt Bahnlinien, Bahnhöfe und wichtige Knotenpunkte. Ihr ausgedehntes Patrouillensystem bietet den stärksten Nähe-Bonus der Gebäudereihe, benötigt jedoch beträchtliche Mannstärke und Versorgungsgüter."
+ gr_guarded_rail_network_desc: "Eine eigene Sicherungsorganisation schützt Bahnlinien, Bahnhöfe und wichtige Knotenpunkte. Ihr ausgedehntes Patrouillensystem verbessert die Ausbreitung der Nähe von der Hauptstadt um 20 %, benötigt jedoch beträchtliche Mannstärke und Versorgungsgüter."
 
  gr_guarded_gravel_roads_maintenance: "Unterhalt gesicherter Schotterstraßen"
  gr_guarded_paved_roads_maintenance: "Unterhalt gesicherter Pflasterstraßen"
