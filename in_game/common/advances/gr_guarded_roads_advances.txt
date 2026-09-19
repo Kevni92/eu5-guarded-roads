@@ -1,0 +1,18 @@
+# Guarded Roads
+# Inject each guarded-road building into the same advance that unlocks its road type.
+
+TRY_INJECT:road_building = {
+	unlock_building = gr_guarded_gravel_roads
+}
+
+TRY_INJECT:paved_road_advance = {
+	unlock_building = gr_guarded_paved_roads
+}
+
+TRY_INJECT:modern_road_advance = {
+	unlock_building = gr_guarded_modern_roads
+}
+
+TRY_INJECT:railroad_advance = {
+	unlock_building = gr_guarded_rail_network
+}
