@@ -13,7 +13,7 @@
 
 Each tier makes the previous guarded-road building obsolete. A building is only available in a Location that has a road connection of the corresponding exact road type to a neighboring Location.
 
-The proximity bonuses use EU5's verified `local_distance_from_capital_speed_propagation` Location modifier, the same modifier used by the vanilla `bridge_infrastructure` building. Vanilla bridges use `0.1`, i.e. +10%. Guarded Roads therefore scale this modifier as 0.05 / 0.10 / 0.15 / 0.20 for +5% / +10% / +15% / +20%.
+The proximity bonuses use EU5's verified `local_distance_from_capital_speed_propagation` Location modifier, the same modifier used by the vanilla bridge building. Vanilla bridges use `0.1`, i.e. +10%. Guarded Roads therefore scale this modifier as 0.05 / 0.10 / 0.15 / 0.20 for +5% / +10% / +15% / +20%.
 
 ## Upkeep and manpower
 
@@ -23,7 +23,7 @@ The buildings employ Soldier POPs and require full maintenance demand even when 
 - Tools
 - Coal
 
-Higher tiers consume progressively more of all three goods. Construction manpower costs scale in 50-point steps: 50 / 100 / 150 / 200. In addition, each tier applies a persistent negative `local_manpower` raw modifier (-0.005 / -0.010 / -0.015 / -0.020), representing manpower tied down in checkpoints, escorts and patrol detachments.
+Higher tiers consume progressively more of all three goods. Construction manpower costs scale in 50-point steps: 50 / 100 / 150 / 200. In addition, each tier applies a persistent negative `local_manpower` raw modifier of -0.05 / -0.10 / -0.15 / -0.20, representing another 50 / 100 / 150 / 200 manpower tied down in checkpoints, escorts and patrol detachments.
 
 ## Languages
 
