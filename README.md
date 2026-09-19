@@ -4,16 +4,16 @@
 
 ## Building chain
 
-| Tier | Building | Required road | Unlock advance | Proximity source | Gold | Manpower |
+| Tier | Building | Required road | Unlock advance | Proximity propagation | Gold | Manpower |
 |---|---|---|---|---:|---:|---:|
-| I | Guarded Gravel Roads | Gravel Road | Road Building | +5 | 150 | 0.10 |
-| II | Guarded Paved Roads | Paved Road | Paved Roads | +10 | 300 | 0.20 |
-| III | Guarded Modern Roads | Modern Road | Modern Roads | +15 | 600 | 0.30 |
-| IV | Guarded Rail Network | Railroad | Railroads | +20 | 1200 | 0.50 |
+| I | Guarded Gravel Roads | Gravel Road | Road Building | +5% | 150 | 0.10 |
+| II | Guarded Paved Roads | Paved Road | Paved Roads | +10% | 300 | 0.20 |
+| III | Guarded Modern Roads | Modern Road | Modern Roads | +15% | 600 | 0.30 |
+| IV | Guarded Rail Network | Railroad | Railroads | +20% | 1200 | 0.50 |
 
 Each tier makes the previous guarded-road building obsolete. A building is only available in a Location that has a road connection of the corresponding exact road type to a neighboring Location.
 
-The proximity values use EU5's verified `local_proximity_source` Location modifier. They are flat proximity-source values, not percentage modifiers.
+The proximity bonuses use EU5's verified `local_distance_from_capital_speed_propagation` Location modifier, the same modifier used by the vanilla Bridge infrastructure building. It is a percentage modifier, so the four tiers use 0.05 / 0.10 / 0.15 / 0.20 for +5% / +10% / +15% / +20%.
 
 ## Upkeep and manpower
 
