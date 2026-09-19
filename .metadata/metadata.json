@@ -1,0 +1,16 @@
+{
+  "name": "Guarded Roads",
+  "id": "kevni92.guarded_roads",
+  "version": "1.0.0",
+  "game_id": "eu5",
+  "supported_game_version": "1.*.*",
+  "short_description": "Adds a four-tier military road-guard building chain that strengthens proximity along developed road networks at the cost of soldiers, manpower and maintenance goods.",
+  "tags": [
+    "Gameplay",
+    "Balance"
+  ],
+  "relationships": [],
+  "game_custom_data": {
+    "multiplayer_synchronized": true
+  }
+}
