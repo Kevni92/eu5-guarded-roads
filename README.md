@@ -13,7 +13,9 @@
 
 German localisation uses **Geleithaus → Wachhaus → Patrouillenkaserne → Bahnwache**.
 
-Each tier makes the previous guarded-road building obsolete. A building is only available in a Location that has a road connection of the corresponding exact road type to a neighboring Location.
+Later road technologies no longer make earlier guard buildings globally obsolete. Instead, the highest road tier currently connected to a Location determines which guard building can be constructed there. This means that a country which has already researched Paved Roads can still build a Geleithaus in Locations that still only have Gravel Roads.
+
+If a higher-tier guard building is completed in a Location, lower-tier guard buildings there are removed automatically. This prevents several guard tiers from stacking their proximity and manpower effects in the same Location.
 
 The proximity bonuses use EU5's verified `local_distance_from_capital_speed_propagation` Location modifier, the same modifier used by the vanilla bridge building. Vanilla bridges use `0.1`, i.e. +10%. Guarded Roads therefore scale this modifier as 0.05 / 0.10 / 0.15 / 0.20 for +5% / +10% / +15% / +20%.
 
