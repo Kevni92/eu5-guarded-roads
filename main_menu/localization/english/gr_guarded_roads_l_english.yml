@@ -1,12 +1,12 @@
 ﻿l_english:
  gr_guarded_gravel_roads: "Guarded Gravel Roads"
- gr_guarded_gravel_roads_desc: "Road wardens, checkpoints and armed patrols secure the gravel roads that connect this location to the realm. The protected route strengthens local proximity, but requires soldiers, manpower and a continuous supply of equipment."
+ gr_guarded_gravel_roads_desc: "Road wardens, checkpoints and armed patrols secure the gravel roads that connect this location to the realm. The protected route improves the propagation of proximity from the capital by 5%, but requires soldiers, manpower and a continuous supply of equipment."
  gr_guarded_paved_roads: "Guarded Paved Roads"
- gr_guarded_paved_roads_desc: "A permanent road guard protects the paved routes serving this location. Better posts, patrols and communications strengthen local proximity at a growing military and material cost."
+ gr_guarded_paved_roads_desc: "A permanent road guard protects the paved routes serving this location. Better posts, patrols and communications improve the propagation of proximity from the capital by 10% at a growing military and material cost."
  gr_guarded_modern_roads: "Guarded Modern Roads"
- gr_guarded_modern_roads_desc: "Professional detachments secure the modern road network with permanent stations, organized patrols and maintained equipment, greatly strengthening local proximity."
+ gr_guarded_modern_roads_desc: "Professional detachments secure the modern road network with permanent stations, organized patrols and maintained equipment, improving the propagation of proximity from the capital by 15%."
  gr_guarded_rail_network: "Guarded Rail Network"
- gr_guarded_rail_network_desc: "A dedicated security organization protects rail lines, stations and critical junctions. Its extensive patrol system provides the strongest proximity benefit in the chain, but demands substantial manpower and supplies."
+ gr_guarded_rail_network_desc: "A dedicated security organization protects rail lines, stations and critical junctions. Its extensive patrol system improves the propagation of proximity from the capital by 20%, but demands substantial manpower and supplies."
 
  gr_guarded_gravel_roads_maintenance: "Guarded Gravel Roads Upkeep"
  gr_guarded_paved_roads_maintenance: "Guarded Paved Roads Upkeep"
