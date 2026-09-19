@@ -1,12 +1,12 @@
 ﻿l_german:
  gr_guarded_gravel_roads: "Geleithaus"
- gr_guarded_gravel_roads_desc: "Das Geleithaus organisiert bewaffnetes Schutzgeleit, Wachposten und Patrouillen entlang der Schotterstraßen, die diesen Ort mit dem Reich verbinden. Die geschützte Route verbessert die Ausbreitung der Nähe von der Hauptstadt um 5 %, benötigt aber Soldaten, Mannstärke und eine dauerhafte Versorgung mit Ausrüstung."
+ gr_guarded_gravel_roads_desc: "Vom Geleithaus aus sichern bewaffnete Begleiter, Wachposten und Reiter die Straßen und begleiten Händler, Boten und Reisende durch unsichere Landstriche."
  gr_guarded_paved_roads: "Wachhaus"
- gr_guarded_paved_roads_desc: "Eine ständige Straßenwache schützt die gepflasterten Routen dieses Ortes. Bessere Wachposten, Patrouillen und Kommunikationswege verbessern die Ausbreitung der Nähe von der Hauptstadt um 10 % bei steigenden militärischen und materiellen Kosten."
+ gr_guarded_paved_roads_desc: "Das Wachhaus dient als fester Stützpunkt für Straßenwachen, die Wege, Brücken und Rastplätze überwachen und Reisende vor Überfällen schützen."
  gr_guarded_modern_roads: "Patrouillenkaserne"
- gr_guarded_modern_roads_desc: "Professionelle Abteilungen sichern das moderne Straßennetz mit ständigen Stationen, organisierten Patrouillen und gewarteter Ausrüstung und verbessern die Ausbreitung der Nähe von der Hauptstadt um 15 %."
+ gr_guarded_modern_roads_desc: "Von der Patrouillenkaserne aus versehen professionelle Abteilungen regelmäßigen Straßendienst, sichern wichtige Verbindungen und halten Meldelinien zwischen den Orten offen."
  gr_guarded_rail_network: "Bahnwache"
- gr_guarded_rail_network_desc: "Eine eigene Sicherungsorganisation schützt Bahnlinien, Bahnhöfe und wichtige Knotenpunkte. Ihr ausgedehntes Patrouillensystem verbessert die Ausbreitung der Nähe von der Hauptstadt um 20 %, benötigt jedoch beträchtliche Mannstärke und Versorgungsgüter."
+ gr_guarded_rail_network_desc: "Die Bahnwache schützt Gleise, Bahnhöfe und wichtige Knotenpunkte, überwacht den Verkehr und stellt die Sicherheit entlang der neuen Verkehrsadern sicher."
 
  gr_guarded_gravel_roads_maintenance: "Unterhalt des Geleithauses"
  gr_guarded_paved_roads_maintenance: "Unterhalt des Wachhauses"
