@@ -1,5 +1,12 @@
 # Guarded Roads
 # Military road-security buildings tied directly to the four vanilla road tiers.
+#
+# The tiers deliberately do NOT use `obsolete`. In EU5, `obsolete` makes an
+# earlier building unavailable globally once the later type is available, which
+# is undesirable while a country still has older roads. Instead, the highest
+# road type currently present at a Location determines which tier can be built.
+# A completed higher-tier guard building removes lower-tier guard buildings in
+# the same Location via `remove_if`.
 
 # Tier I — Gravel Road / Age of Traditions
 gr_guarded_gravel_roads = {
@@ -22,11 +29,37 @@ gr_guarded_gravel_roads = {
 		has_advance = road_building
 	}
 
+	# Build the Geleithaus only where Gravel Road is the highest road tier
+	# currently connected to this Location.
 	location_potential = {
 		any_neighbor_location = {
 			has_road_of_type_to = {
 				target = root
 				type = road_type:gravel_road
+			}
+		}
+		NOT = {
+			any_neighbor_location = {
+				has_road_of_type_to = {
+					target = root
+					type = road_type:paved_road
+				}
+			}
+		}
+		NOT = {
+			any_neighbor_location = {
+				has_road_of_type_to = {
+					target = root
+					type = road_type:modern_road
+				}
+			}
+		}
+		NOT = {
+			any_neighbor_location = {
+				has_road_of_type_to = {
+					target = root
+					type = road_type:railroad
+				}
 			}
 		}
 	}
@@ -36,6 +69,41 @@ gr_guarded_gravel_roads = {
 			has_road_of_type_to = {
 				target = root
 				type = road_type:gravel_road
+			}
+		}
+		NOT = {
+			any_neighbor_location = {
+				has_road_of_type_to = {
+					target = root
+					type = road_type:paved_road
+				}
+			}
+		}
+		NOT = {
+			any_neighbor_location = {
+				has_road_of_type_to = {
+					target = root
+					type = road_type:modern_road
+				}
+			}
+		}
+		NOT = {
+			any_neighbor_location = {
+				has_road_of_type_to = {
+					target = root
+					type = road_type:railroad
+				}
+			}
+		}
+	}
+
+	# Once a higher guard building has been completed here, remove this tier.
+	remove_if = {
+		location = {
+			OR = {
+				has_building = building_type:gr_guarded_paved_roads
+				has_building = building_type:gr_guarded_modern_roads
+				has_building = building_type:gr_guarded_rail_network
 			}
 		}
 	}
@@ -72,17 +140,33 @@ gr_guarded_paved_roads = {
 	city = yes
 	megalopolis = yes
 
-	obsolete = gr_guarded_gravel_roads
-
 	country_potential = {
 		has_advance = paved_road_advance
 	}
 
+	# Build the Wachhaus only where Paved Road is the highest road tier
+	# currently connected to this Location.
 	location_potential = {
 		any_neighbor_location = {
 			has_road_of_type_to = {
 				target = root
 				type = road_type:paved_road
+			}
+		}
+		NOT = {
+			any_neighbor_location = {
+				has_road_of_type_to = {
+					target = root
+					type = road_type:modern_road
+				}
+			}
+		}
+		NOT = {
+			any_neighbor_location = {
+				has_road_of_type_to = {
+					target = root
+					type = road_type:railroad
+				}
 			}
 		}
 	}
@@ -92,6 +176,31 @@ gr_guarded_paved_roads = {
 			has_road_of_type_to = {
 				target = root
 				type = road_type:paved_road
+			}
+		}
+		NOT = {
+			any_neighbor_location = {
+				has_road_of_type_to = {
+					target = root
+					type = road_type:modern_road
+				}
+			}
+		}
+		NOT = {
+			any_neighbor_location = {
+				has_road_of_type_to = {
+					target = root
+					type = road_type:railroad
+				}
+			}
+		}
+	}
+
+	remove_if = {
+		location = {
+			OR = {
+				has_building = building_type:gr_guarded_modern_roads
+				has_building = building_type:gr_guarded_rail_network
 			}
 		}
 	}
@@ -128,17 +237,25 @@ gr_guarded_modern_roads = {
 	city = yes
 	megalopolis = yes
 
-	obsolete = gr_guarded_paved_roads
-
 	country_potential = {
 		has_advance = modern_road_advance
 	}
 
+	# Build the Patrol Barracks only where Modern Road is the highest road tier
+	# currently connected to this Location.
 	location_potential = {
 		any_neighbor_location = {
 			has_road_of_type_to = {
 				target = root
 				type = road_type:modern_road
+			}
+		}
+		NOT = {
+			any_neighbor_location = {
+				has_road_of_type_to = {
+					target = root
+					type = road_type:railroad
+				}
 			}
 		}
 	}
@@ -149,6 +266,20 @@ gr_guarded_modern_roads = {
 				target = root
 				type = road_type:modern_road
 			}
+		}
+		NOT = {
+			any_neighbor_location = {
+				has_road_of_type_to = {
+					target = root
+					type = road_type:railroad
+				}
+			}
+		}
+	}
+
+	remove_if = {
+		location = {
+			has_building = building_type:gr_guarded_rail_network
 		}
 	}
 
@@ -183,8 +314,6 @@ gr_guarded_rail_network = {
 	town = yes
 	city = yes
 	megalopolis = yes
-
-	obsolete = gr_guarded_modern_roads
 
 	country_potential = {
 		has_advance = railroad_advance
